@@ -99,32 +99,27 @@
         }
     </style>
     <hr>
-    <h2><a href="https://en.wikipedia.org/wiki/Python_(programming_language)">Python Programming Language</a></h2>
-    <blockquote cite="https://en.wikipedia.org/wiki/Python_(programming_language)">Python is an easy to learn, powerful programming language. It has efficient high-level data structures and a simple but effective approach to object-oriented programming. </blockquote>
+    <h2><a href="https://en.wikipedia.org/wiki/Kotlin_(programming_language)">
+        Kotlin (programming language)</a></h2>
+    <blockquote cite="https://en.wikipedia.org/wiki/Kotlin_(programming_language)">
+        Kotlin is a cross-platform, statically typed, general-purpose programming language with type inference. Kotlin is designed to interoperate fully with Java, and the JVM version of Kotlin's standard library depends on the Java Class Library, but type inference allows its syntax to be more concise. </blockquote>
     <pre>
-        # Python program to find the factorial of a number provided by the user.
+        import java.time.LocalDateTime
+import java.time.format.DateTimeFormatter
 
-# change the value for a different result
-num = 7
+fun main(args: Array<String>) {
 
-# To take input from the user
-#num = int(input("Enter a number: "))
+    val current = LocalDateTime.now()
 
-factorial = 1
+    val formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss.SSS")
+    val formatted = current.format(formatter)
 
-# check if the number is negative, positive or zero
-if num < 0:
-   print("Sorry, factorial does not exist for negative numbers")
-elif num == 0:
-   print("The factorial of 0 is 1")
-else:
-   for i in range(1,num + 1):
-       factorial = factorial*i
-   print("The factorial of",num,"is",factorial)
+    println("Current Date and Time is: $formatted")
+}
 
-   Output : The factorial of 7 is 5040...!
+   Output : Current Date and Time is: 2021-02-05 11:29:57.401
     </pre>
-    <h4><a href="https://www.programiz.com/python-programming/examples/factorial">Source Code</a></h4>
+    <h4><a href="https://www.programiz.com/kotlin-programming/examples/current-date-time">Source Code</a></h4>
 
 
 </body>
